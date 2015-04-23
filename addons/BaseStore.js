@@ -20,6 +20,7 @@ function BaseStore(dispatcher) {
     if (this.initialize) {
         this.initialize();
     }
+    this.setMaxListeners(0);
 }
 
 inherits(BaseStore, EventEmitter);
